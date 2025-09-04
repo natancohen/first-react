@@ -144,7 +144,7 @@ export default function MiddleColumn({
         {errors.damageType && <span className={styles.error}>{errors.damageType.message}</span>}
       </div>
 
-      {/* המלצות ראשוניות */}
+
       <div className={styles.fieldBox} style={{ minHeight: '120px' }}>
         <label className={styles.label}>המלצות ראשוניות</label>
         <textarea
