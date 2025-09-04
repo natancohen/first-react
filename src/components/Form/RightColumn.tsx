@@ -46,7 +46,7 @@ export default function RightColumn({
 
   return (
     <aside className={`${styles.column} ${styles.rightColumn}`} data-label="פרטים אישיים">
-      {/* יחידת משנה */}
+      {/*    יחידת משנה */}
       <div className={styles.fieldBox}>
         <label className={styles.label}>יחידת משנה *</label>
         <select 
