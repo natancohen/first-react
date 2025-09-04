@@ -1,0 +1,131 @@
+@import './FormBase.module.css';
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  overflow: auto;
+  direction: rtl;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.modalHeader {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.emptyState {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px dashed #ccc;
+  border-radius: 4px;
+}
+
+.casualtyItem {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: var(--border-radius);
+  background-color: #f9f9f9;
+}
+
+.casualtyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 1rem;
+  align-items: end;
+}
+
+.casualtyField {
+  display: flex;
+  flex-direction: column;
+}
+
+.casualtyLabel {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.removeButton {
+  background-color: var(--error-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.removeButton:hover {
+  background-color: #d32f2f;
+}
+
+.addButton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.addButton:hover {
+  background-color: #45a049;
+}
+
+.closeButton {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.closeButton:hover {
+  background-color: var(--primary-hover);
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+/* Input and select styles reused from base, but override if needed 
+ .input,
+.select {
+  Inherit from base
+}  */

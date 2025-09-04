@@ -1,0 +1,35 @@
+/* src/components/Form/Responsive.module.css */
+
+/* Reuse variables from FormBase */
+@import './FormBase.module.css';
+
+@media (max-width: 1200px) {
+  .formGrid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "rightColumn middleColumn"
+      "leftColumn leftColumn"
+      "submitButton submitButton";
+  }
+  
+  .formWrapper {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 768px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "rightColumn"
+      "middleColumn"
+      "leftColumn"
+      "submitButton";
+  }
+  
+  .formWrapper {
+    max-width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
