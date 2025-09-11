@@ -1,4 +1,4 @@
-/* .modal {
+.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -73,6 +73,7 @@
   border-radius: 4px;
   font-size: 0.9rem;
   background-color: #fafafa;
+  direction: rtl; /* תמיכה RTL */
 }
 
 .error {
@@ -134,4 +135,22 @@
   justify-content: space-between;
   margin-top: 1.5rem;
   gap: 1rem;
-} */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .casualtyGrid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .modalContent {
+    width: 95%;
+    padding: 1rem;
+  }
+  
+  .modalButtons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
