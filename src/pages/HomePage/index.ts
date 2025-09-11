@@ -1,2 +1,2 @@
 // src/pages/HomePage/index.ts
-export { default } from './HomePage';
+// export { default } from './HomePage';

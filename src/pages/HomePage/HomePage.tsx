@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import styles from './HomePage.module.css';
+import styles from '../styles/HomePage.module.css';
 
 export default function HomePage() {
   return (
-    <main className={styles.pageContainer}>
+    <main className={styles.pageContainer} dir="rtl">
       <header className={styles.header}>
         <h1 className={styles.title}>ברוכים הבאים</h1>
         <p className={styles.subtitle}>מערכת הזנת דו''ח בטיחות</p>

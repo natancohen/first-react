@@ -9,6 +9,18 @@ export const useFormValidation = () => {
         message: 'ההמלצות לא יכולות להכיל יותר מ-800 תווים'
       }
     },
+
+    costAmount: {
+      pattern: {
+        value: /^\d+(\.\d{1,2})?$/,
+        message: 'הזן סכום תקין (מספר חיובי עם עד 2 ספרות אחרי הנקודה)'
+      },
+      min: {
+        value: 0,
+        message: 'הסכום חייב להיות חיובי'
+      }
+    },
+    
     date: {
       required: 'תאריך הוא שדה חובה',
       validate: (value: string) => {
@@ -64,6 +76,7 @@ export const useFormValidation = () => {
         return true;
       }
     },
+
     location: {
       required: 'מיקום הוא שדה חובה'
     },
