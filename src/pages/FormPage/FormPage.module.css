@@ -1,11 +1,11 @@
 .pageContainer {
-  width: 100%; /* מלא את רוחב המסך */
+  width: 100%; 
   min-height: 100vh;
   background-color: #f8fbff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* התחלה מלמעלה */
+  justify-content: flex-start; 
   padding: 1rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   direction: rtl;
@@ -13,9 +13,9 @@
 }
 
 .formWrapper {
-  width: 100%; /* מלא את הרוחב */
-  max-width: 1100px; /* הגבלה מקסימלית נוחה */
-  margin: 0 auto; /* מרכוז */
+  width: 100%; 
+  max-width: 1100px; 
+  margin: 0 auto; 
   background: white;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -34,7 +34,7 @@
   }
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .pageContainer {
     padding: 0.5rem;
@@ -44,7 +44,7 @@
     padding: 1rem;
     border-radius: 12px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 100%; /* מלא רוחב במובייל */
+    max-width: 100%; 
   }
 }
 

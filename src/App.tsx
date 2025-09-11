@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage/HomePage';
 import FormPage from './pages/FormPage/FormPage';
-import './styles/App.css';
+import './App.css';
 
 
 function App() {
